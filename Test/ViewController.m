@@ -21,16 +21,20 @@
 
     if (!_collection) {
         LWCustomerLayout *layout = [[LWCustomerLayout alloc]init];
-        UICollectionViewFlowLayout *lay = [[UICollectionViewFlowLayout alloc]init];
-        layout.minimumLineSpacing  =10;
-        layout.minimumInteritemSpacing  =10;
+     //   UICollectionViewFlowLayout *lay = [[UICollectionViewFlowLayout alloc]init];
+        layout.minimumLineSpacing  =0;
+        layout.minimumInteritemSpacing  =0;
+        layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
        // lay.itemSize = CGSizeMake(Width/2, Width/2);
       //  layout.itemSize = CGSizeMake(self.view.frame.size.width/2, self.view.frame.size.width/2);
         
-        _collection = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
+        _collection = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200) collectionViewLayout:layout];
         _collection.backgroundColor = [UIColor whiteColor];
         _collection.delegate = self;
         _collection.dataSource = self;
+        _collection.pagingEnabled = YES;
+        _collection.showsHorizontalScrollIndicator = NO;
+        _collection.showsVerticalScrollIndicator = NO;
        // [_collection registerNib:[UINib nibWithNibName:@"LWCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"CELL"];
         [_collection registerNib:[UINib nibWithNibName:@"UserRecoedCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"UserID"];
     }
@@ -42,6 +46,33 @@
     return CGSizeMake(Width, 50);
   //  return CGSizeMake((Width-20)/3.0,(Width-20)/3.0);
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mqzone://"]];
+    NSLog(@"open");
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+//    UICollectionView *tempCollec =(UICollectionView *) scrollView;
+//    
+//   NSArray *visibCell  = [tempCollec visibleCells];
+//    UICollectionViewCell *visibleView = nil;
+//    if (visibCell.count>0) {
+//        visibleView = [visibCell firstObject];
+//        visibleView.transform= CGAffineTransformMakeScale(.8, .8);
+//
+//    }else{
+//    
+//        visibleView.transform= CGAffineTransformMakeScale(.5, .5);
+//
+//    }
+//   
+    
+    
+    
+    
+    
+    }
 - (void)viewDidLoad {
     [super viewDidLoad];
    
