@@ -13,6 +13,13 @@
 		C98D67FD1DB76FD0000B678E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98D67FB1DB76FD0000B678E /* Main.storyboard */; };
 		C98D67FF1DB76FD0000B678E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98D67FE1DB76FD0000B678E /* Assets.xcassets */; };
 		C98D68021DB76FD0000B678E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98D68001DB76FD0000B678E /* LaunchScreen.storyboard */; };
+		C98D68311DB9F79C000B678E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D68301DB9F79C000B678E /* TableViewController.m */; };
+		C98D68341DB9FEF4000B678E /* LWCustomerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D68331DB9FEF4000B678E /* LWCustomerLayout.m */; };
+		C98D68381DBA05D2000B678E /* LWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D68361DBA05D2000B678E /* LWCollectionViewCell.m */; };
+		C98D68391DBA05D2000B678E /* LWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98D68371DBA05D2000B678E /* LWCollectionViewCell.xib */; };
+		C98D683B1DBA0641000B678E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98D683A1DBA0641000B678E /* 2.jpg */; };
+		C98D683F1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D683D1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m */; };
+		C98D68401DBD9B2E000B678E /* UserRecoedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98D683E1DBD9B2E000B678E /* UserRecoedCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,17 @@
 		C98D67FE1DB76FD0000B678E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C98D68011DB76FD0000B678E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C98D68031DB76FD0000B678E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98D682F1DB9F79C000B678E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C98D68301DB9F79C000B678E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C98D68321DB9FEF4000B678E /* LWCustomerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCustomerLayout.h; sourceTree = "<group>"; };
+		C98D68331DB9FEF4000B678E /* LWCustomerLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCustomerLayout.m; sourceTree = "<group>"; };
+		C98D68351DBA05D2000B678E /* LWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCollectionViewCell.h; sourceTree = "<group>"; };
+		C98D68361DBA05D2000B678E /* LWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCollectionViewCell.m; sourceTree = "<group>"; };
+		C98D68371DBA05D2000B678E /* LWCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LWCollectionViewCell.xib; sourceTree = "<group>"; };
+		C98D683A1DBA0641000B678E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C98D683C1DBD9B2E000B678E /* UserRecoedCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRecoedCollectionViewCell.h; sourceTree = "<group>"; };
+		C98D683D1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRecoedCollectionViewCell.m; sourceTree = "<group>"; };
+		C98D683E1DBD9B2E000B678E /* UserRecoedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserRecoedCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,16 @@
 		C98D67E61DB76FD0000B678E = {
 			isa = PBXGroup;
 			children = (
+				C98D683C1DBD9B2E000B678E /* UserRecoedCollectionViewCell.h */,
+				C98D683D1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m */,
+				C98D683E1DBD9B2E000B678E /* UserRecoedCollectionViewCell.xib */,
+				C98D68351DBA05D2000B678E /* LWCollectionViewCell.h */,
+				C98D68361DBA05D2000B678E /* LWCollectionViewCell.m */,
+				C98D68371DBA05D2000B678E /* LWCollectionViewCell.xib */,
+				C98D68321DB9FEF4000B678E /* LWCustomerLayout.h */,
+				C98D68331DB9FEF4000B678E /* LWCustomerLayout.m */,
+				C98D682F1DB9F79C000B678E /* TableViewController.h */,
+				C98D68301DB9F79C000B678E /* TableViewController.m */,
 				C98D67F11DB76FD0000B678E /* Test */,
 				C98D67F01DB76FD0000B678E /* Products */,
 			);
@@ -63,6 +91,7 @@
 				C98D67F81DB76FD0000B678E /* ViewController.h */,
 				C98D67F91DB76FD0000B678E /* ViewController.m */,
 				C98D67FB1DB76FD0000B678E /* Main.storyboard */,
+				C98D683A1DBA0641000B678E /* 2.jpg */,
 				C98D67FE1DB76FD0000B678E /* Assets.xcassets */,
 				C98D68001DB76FD0000B678E /* LaunchScreen.storyboard */,
 				C98D68031DB76FD0000B678E /* Info.plist */,
@@ -136,9 +165,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98D68401DBD9B2E000B678E /* UserRecoedCollectionViewCell.xib in Resources */,
 				C98D68021DB76FD0000B678E /* LaunchScreen.storyboard in Resources */,
 				C98D67FF1DB76FD0000B678E /* Assets.xcassets in Resources */,
+				C98D683B1DBA0641000B678E /* 2.jpg in Resources */,
 				C98D67FD1DB76FD0000B678E /* Main.storyboard in Resources */,
+				C98D68391DBA05D2000B678E /* LWCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +182,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C98D67FA1DB76FD0000B678E /* ViewController.m in Sources */,
+				C98D68381DBA05D2000B678E /* LWCollectionViewCell.m in Sources */,
 				C98D67F71DB76FD0000B678E /* AppDelegate.m in Sources */,
 				C98D67F41DB76FD0000B678E /* main.m in Sources */,
+				C98D68311DB9F79C000B678E /* TableViewController.m in Sources */,
+				C98D68341DB9FEF4000B678E /* LWCustomerLayout.m in Sources */,
+				C98D683F1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TFLH.Test;
@@ -272,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TFLH.Test;
@@ -298,6 +336,7 @@
 				C98D68081DB76FD0000B678E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
