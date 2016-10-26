@@ -10,10 +10,17 @@
 #import "DZNEmptyDataSet/Source/UIScrollView+EmptyDataSet.h"
 @interface EmptyDataSet ()<UITableViewDataSource,UITableViewDelegate,DZNEmptyDataSetDelegate,DZNEmptyDataSetSource>
 @property(nonatomic,strong)UITableView *tableSet;
+@property(nonatomic,strong)NSArray *data;
 @end
 
 @implementation EmptyDataSet
+-(NSArray *)data{
 
+    if (!_data) {
+        _data = [NSArray array];
+    }
+    return _data;
+}
 -(UITableView *)tableSet{
 
     if (!_tableSet) {
@@ -32,19 +39,28 @@
     // Do any additional setup after loading the view.
     [self.view addSubview:self.tableSet];
 
+  //  NSIndexPath *indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
+
+    
+    
 }
 
 #pragma mark dataSources
 -(NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView{
 
-    
     NSAttributedString *string = [[NSAttributedString alloc]initWithString:@"暂无数据"];
     return string;;
 }
 
 -(UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView{
+ 
+    
+    return [UIImage imageNamed:@"7.jpg"];
+}
+#pragma mark
+-(BOOL)emptyDataSetShouldAnimateImageView:(UIScrollView *)scrollView{
 
-    return [UIImage imageNamed:@"2.jpg"];
+    return YES;
 }
 -(CAAnimation *)imageAnimationForEmptyDataSet:(UIScrollView *)scrollView{
 
@@ -52,9 +68,9 @@
     
     animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
     animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0)];
-    
     animation.duration = 3;
     animation.cumulative = YES;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     animation.repeatCount = MAXFLOAT;
     
     return animation;
@@ -80,12 +96,10 @@
        return [UIImage imageNamed:@"hor.png"];
 }
 
-
-
 - (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
 {
     NSLog(@"backgroundColorForEmptyDataSet");
-    return [UIColor brownColor];
+    return [UIColor whiteColor];
 }
 
 #if 0
@@ -98,6 +112,7 @@
     UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [activityView startAnimating];
     
+//    UIImageView *temp = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"2.jpg"]];
     return activityView;
 }
 #endif
@@ -152,21 +167,53 @@
 - (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView
 {
     NSLog(@"点击按钮");
+    
+    
+    self.data = @[@"",@"",@"",@"",@""];
+    
+    
+    [self.tableSet reloadData];
     // Do something
 }
-#pragma mark tableDelagate
+#pragma mark tableDataSources
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
-    return 0;
+    return self.data.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELL"];
+    UIView *selectView = [[UIView alloc]initWithFrame:self.view.frame];
+    selectView.backgroundColor = [UIColor redColor];
+    cell.selectedBackgroundView  = selectView;
     
+    if (indexPath.row == 1) {
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
     
+    if (indexPath.row == 3) {
+        cell.selected = YES;
+        // 颜色变浅
+       // cell.userInteractionEnabled = NO;
+    }
     
-    
+    if (indexPath.row%2 == 0) {
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"<第%ld行",indexPath.row];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    UITableViewCell *temp = [tableView cellForRowAtIndexPath:indexPath];
+    temp.selected  =NO;
+    
+
+    NSLog(@"选中行%ld",indexPath.row);
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
