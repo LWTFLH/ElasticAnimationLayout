@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
      [self allFonts];
-    
+    [self addBtn];
     self.navigationItem.titleView = [[UISwitch alloc] init];
     // self.view.backgroundColor = [UIColor cyanColor];
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
@@ -34,6 +34,25 @@
     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = left;
     [self customerIndicator];
+}
+
+-(void)addBtn{
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"click" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setFrame:CGRectMake(90, 90, 180, 20)];
+    [btn sizeToFit];
+    [self.view addSubview:btn];
+    
+    
+}
+
+-(void)click:(UIButton *)btn{
+
+    NSLog(@"click");
+    
 }
 #pragma mark  indicator delegate
 -(UIColor *)activityIndicatorView:(MONActivityIndicatorView *)activityIndicatorView circleBackgroundColorAtIndex:(NSUInteger)index{
@@ -70,7 +89,9 @@
     [self.view addSubview:self.indicator];
     [self.indicator startAnimating];
     [self lwSetAllViewFont];
-    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(6 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.indicator stopAnimating];
+    });
     
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(90, 90, 200, 20)];
     label.text = @"兰亭雅黑是否收发文发嘎嘎";

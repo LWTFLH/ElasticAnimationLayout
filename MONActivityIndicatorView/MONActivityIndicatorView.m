@@ -168,6 +168,11 @@
 #pragma mark - Public Methods
 
 - (void)startAnimating {
+    
+    if (self.superview) {
+        self.superview.userInteractionEnabled = NO;
+    }
+    
   if (!self.isAnimating) {
     [self addCircles];
     self.hidden = NO;
@@ -176,6 +181,10 @@
 }
 
 - (void)stopAnimating {
+    if (self.superview) {
+        self.superview.userInteractionEnabled=  YES;
+    }
+    
   if (self.isAnimating) {
     [self removeCircles];
     self.hidden = YES;
