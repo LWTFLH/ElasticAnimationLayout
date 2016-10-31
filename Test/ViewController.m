@@ -11,7 +11,7 @@
 #import "LWCustomerLayout.h"
 #import "LWCollectionViewCell.h"
 #import "UserRecoedCollectionViewCell.h"
-
+#import "RightPanBack.h"
 @interface ViewController ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource,UICollectionViewDelegate>
 @property(nonatomic,strong) UICollectionView *collection;
 @end
@@ -48,8 +48,12 @@
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mqzone://"]];
-    NSLog(@"open");
+//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mqzone://"]];
+//    NSLog(@"open");
+    
+    [self. navigationController pushViewController:[[RightPanBack alloc] init] animated:YES];
+    
+    
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
@@ -77,6 +81,7 @@
     [super viewDidLoad];
    
     [self.view addSubview:self.collection];
+    self.navigationItem.title = @"瀑布";
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
 
