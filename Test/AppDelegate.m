@@ -22,6 +22,16 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     [self.window makeKeyAndVisible];
+    //   配置字体
+    
+    
+//    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"兰亭黑" size:13]}];
+    
+  //  [[UILabel appearance] setFont:[UIFont fontWithName:@"兰亭黑" size:13]];
+    
+  
+    
+    
     return YES;
 }
 

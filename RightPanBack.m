@@ -24,6 +24,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+     [self allFonts];
+    
     self.navigationItem.titleView = [[UISwitch alloc] init];
     // self.view.backgroundColor = [UIColor cyanColor];
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
@@ -48,12 +50,18 @@
 -(NSString *)activityIndicatorView:(MONActivityIndicatorView *)activityIndicatorView circleTextAtIndex:(NSUInteger)index{
 
     if (index ==0) {
-        return @"哈哈";
+        return @"同";
     }else if (index == 1){
     
-        return @"变色";
+        return @"牛";
+    }else if (index == 2){
+    
+        return @"科";
+    }else if (index ==3){
+    
+        return @"技";
     }
-    return @"其它";
+    return @"！";
     
 }
 - (void)customerIndicator {
@@ -61,6 +69,19 @@
     // self.indicator.center  = self.view.center;
     [self.view addSubview:self.indicator];
     [self.indicator startAnimating];
+    [self lwSetAllViewFont];
+    
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(90, 90, 200, 20)];
+    label.text = @"兰亭雅黑是否收发文发嘎嘎";
+    label.font = [UIFont fontWithName:@"FZLTHK--GBK1-0" size:[[label font] pointSize]];
+    [self.view addSubview:label];
+    UILabel *label2 = [[UILabel alloc]initWithFrame:CGRectMake(90, 150, 200, 20)];
+    label2.text = @"是否收发文发嘎嘎";
+  //  label2.font = [UIFont systemFontOfSize:14];
+    [self.view addSubview:label2];
+    
+    
 }
 - (void)showLWIndicator {
 
@@ -85,6 +106,42 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+-(void)allFonts{
+
+    
+    for(NSString *fontfamilyname in [UIFont familyNames])
+    {
+        NSLog(@"family:'%@'",fontfamilyname);
+        for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
+        {
+            NSLog(@"\tfont:'%@'",fontName);
+        }
+        NSLog(@"-------------");
+    }
+}
+-(void)lwSetAllViewFont{
+//   1.在每个控制器里添加这个方法，，，   2.。所有的控制器继承一个父类，在父类实现。
+//  你试下
+[self setFontFamily:@"FZLanTingHei-R-GBK" forView:self.view andSubViews:YES];
+}
+-(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
+{
+    if ([view isKindOfClass:[UILabel class]])
+    { //  在这里判断，对想要改变的控件修改字体
+        UILabel *lbl = (UILabel *)view;
+        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+    }
+    if (isSubViews)
+    {
+        for (UIView *sview in view.subviews)
+        {
+            [self setFontFamily:fontFamily forView:sview andSubViews:YES];
+        }
+    }
+}
+
 
 /*
 #pragma mark - Navigation
