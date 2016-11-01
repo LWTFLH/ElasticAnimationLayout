@@ -30,11 +30,24 @@
 		C98D68591DC05076000B678E /* hor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C98D68581DC05076000B678E /* hor@2x.png */; };
 		C98D685B1DC07DFA000B678E /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98D685A1DC07DFA000B678E /* 5.jpg */; };
 		C98D685D1DC07FF1000B678E /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C98D685C1DC07FF1000B678E /* 7.jpg */; };
+		C9BAED0C1DC829B5005F3D85 /* UIView+GestureCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED0B1DC829B5005F3D85 /* UIView+GestureCallback.m */; };
+		C9BAED0F1DC83537005F3D85 /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED0E1DC83537005F3D85 /* UIView+HUD.m */; };
+		C9BAED121DC83772005F3D85 /* ViewControllerHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED111DC83772005F3D85 /* ViewControllerHUD.m */; };
+		C9BAED181DC83891005F3D85 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C9BAED141DC83891005F3D85 /* LICENSE */; };
+		C9BAED191DC83891005F3D85 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED161DC83891005F3D85 /* MBProgressHUD.m */; };
+		C9BAED1A1DC83892005F3D85 /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED171DC83891005F3D85 /* README.mdown */; };
+		C9BAED1D1DC838FF005F3D85 /* UIColor+Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED1C1DC838FF005F3D85 /* UIColor+Mac.m */; };
+		C9BAED211DC83AC7005F3D85 /* UIView+MAC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED201DC83AC7005F3D85 /* UIView+MAC.m */; };
+		C9BAED241DC83D99005F3D85 /* UIColor+MACProject.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED231DC83D99005F3D85 /* UIColor+MACProject.m */; };
+		C9BAED271DC84951005F3D85 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED261DC84951005F3D85 /* UIView+Screenshot.m */; };
 		C9D104DB1DC6F23B00C40226 /* RightPanBack.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D104DA1DC6F23B00C40226 /* RightPanBack.m */; };
 		C9D104E01DC6F57100C40226 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C9D104DD1DC6F57100C40226 /* .gitkeep */; };
 		C9D104E11DC6F57100C40226 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D104DF1DC6F57100C40226 /* MONActivityIndicatorView.m */; };
 		C9D104E51DC71F4900C40226 /* SYFZLTKHJW.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C9D104E41DC71E4200C40226 /* SYFZLTKHJW.TTF */; };
 		C9D104E71DC7206500C40226 /* aa.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C9D104E61DC7205500C40226 /* aa.TTF */; };
+		C9FD372A1DC747E900E0D1BB /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FD37291DC747E900E0D1BB /* UIView+Shake.m */; };
+		C9FD372D1DC7495700E0D1BB /* UIView+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FD372C1DC7495700E0D1BB /* UIView+Blur.m */; };
+		C9FD372F1DC74ADE00E0D1BB /* 遮罩-底图@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FD372E1DC74ADE00E0D1BB /* 遮罩-底图@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +86,25 @@
 		C98D68581DC05076000B678E /* hor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hor@2x.png"; sourceTree = "<group>"; };
 		C98D685A1DC07DFA000B678E /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		C98D685C1DC07FF1000B678E /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		C9BAED0A1DC829B5005F3D85 /* UIView+GestureCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureCallback.h"; sourceTree = "<group>"; };
+		C9BAED0B1DC829B5005F3D85 /* UIView+GestureCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureCallback.m"; sourceTree = "<group>"; };
+		C9BAED0D1DC83537005F3D85 /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		C9BAED0E1DC83537005F3D85 /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		C9BAED101DC83771005F3D85 /* ViewControllerHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerHUD.h; sourceTree = "<group>"; };
+		C9BAED111DC83772005F3D85 /* ViewControllerHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerHUD.m; sourceTree = "<group>"; };
+		C9BAED141DC83891005F3D85 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C9BAED151DC83891005F3D85 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C9BAED161DC83891005F3D85 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C9BAED171DC83891005F3D85 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		C9BAED1B1DC838FF005F3D85 /* UIColor+Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Mac.h"; sourceTree = "<group>"; };
+		C9BAED1C1DC838FF005F3D85 /* UIColor+Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Mac.m"; sourceTree = "<group>"; };
+		C9BAED1E1DC83975005F3D85 /* MACMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MACMacro.h; sourceTree = "<group>"; };
+		C9BAED1F1DC83AC7005F3D85 /* UIView+MAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MAC.h"; sourceTree = "<group>"; };
+		C9BAED201DC83AC7005F3D85 /* UIView+MAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MAC.m"; sourceTree = "<group>"; };
+		C9BAED221DC83D99005F3D85 /* UIColor+MACProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MACProject.h"; sourceTree = "<group>"; };
+		C9BAED231DC83D99005F3D85 /* UIColor+MACProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MACProject.m"; sourceTree = "<group>"; };
+		C9BAED251DC84951005F3D85 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		C9BAED261DC84951005F3D85 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		C9D104D91DC6F23B00C40226 /* RightPanBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightPanBack.h; sourceTree = "<group>"; };
 		C9D104DA1DC6F23B00C40226 /* RightPanBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPanBack.m; sourceTree = "<group>"; };
 		C9D104DD1DC6F57100C40226 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -80,6 +112,11 @@
 		C9D104DF1DC6F57100C40226 /* MONActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MONActivityIndicatorView.m; sourceTree = "<group>"; };
 		C9D104E41DC71E4200C40226 /* SYFZLTKHJW.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SYFZLTKHJW.TTF; sourceTree = "<group>"; };
 		C9D104E61DC7205500C40226 /* aa.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = aa.TTF; sourceTree = "<group>"; };
+		C9FD37281DC747E900E0D1BB /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
+		C9FD37291DC747E900E0D1BB /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
+		C9FD372B1DC7495700E0D1BB /* UIView+Blur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Blur.h"; sourceTree = "<group>"; };
+		C9FD372C1DC7495700E0D1BB /* UIView+Blur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Blur.m"; sourceTree = "<group>"; };
+		C9FD372E1DC74ADE00E0D1BB /* 遮罩-底图@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "遮罩-底图@2x.png"; path = "../遮罩-底图@2x.png"; sourceTree = "<group>"; };
 		D8339997AD63D76304DB12A0 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +144,10 @@
 		C98D67E61DB76FD0000B678E = {
 			isa = PBXGroup;
 			children = (
-				C9D104E61DC7205500C40226 /* aa.TTF */,
-				C9D104E41DC71E4200C40226 /* SYFZLTKHJW.TTF */,
+				C9BAED131DC83891005F3D85 /* MBProgressHUD */,
+				C9BAED091DC8282A005F3D85 /* Exten */,
+				C9BAED081DC8281E005F3D85 /* Lib */,
+				C9BAED071DC82800005F3D85 /* TFF */,
 				C98D68471DC03EFB000B678E /* Layout */,
 				C98D68461DC03EE4000B678E /* Controller */,
 				C98D68411DBDA9E0000B678E /* Calendar */,
@@ -140,6 +179,7 @@
 		C98D67F21DB76FD0000B678E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9FD372E1DC74ADE00E0D1BB /* 遮罩-底图@2x.png */,
 				C98D68031DB76FD0000B678E /* Info.plist */,
 				C98D68001DB76FD0000B678E /* LaunchScreen.storyboard */,
 				C98D67FE1DB76FD0000B678E /* Assets.xcassets */,
@@ -161,18 +201,17 @@
 		C98D68461DC03EE4000B678E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C9FD37241DC73F8700E0D1BB /* Sources */,
 				C9D104DC1DC6F57100C40226 /* MONActivityIndicatorView */,
 				C98D684D1DC0416F000B678E /* DZNEmptyDataSet */,
 				C98D682F1DB9F79C000B678E /* TableViewController.h */,
 				C98D68301DB9F79C000B678E /* TableViewController.m */,
+				C9BAED101DC83771005F3D85 /* ViewControllerHUD.h */,
+				C9BAED111DC83772005F3D85 /* ViewControllerHUD.m */,
 				C98D67F81DB76FD0000B678E /* ViewController.h */,
 				C98D67F91DB76FD0000B678E /* ViewController.m */,
 				C98D684A1DC040C5000B678E /* EmptyDataSet.h */,
 				C98D684B1DC040C5000B678E /* EmptyDataSet.m */,
-				C98D68581DC05076000B678E /* hor@2x.png */,
-				C98D685C1DC07FF1000B678E /* 7.jpg */,
-				C98D683A1DBA0641000B678E /* green.jpg */,
-				C98D685A1DC07DFA000B678E /* 5.jpg */,
 				C9D104D91DC6F23B00C40226 /* RightPanBack.h */,
 				C9D104DA1DC6F23B00C40226 /* RightPanBack.m */,
 			);
@@ -230,6 +269,57 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		C9BAED071DC82800005F3D85 /* TFF */ = {
+			isa = PBXGroup;
+			children = (
+				C9D104E61DC7205500C40226 /* aa.TTF */,
+				C9D104E41DC71E4200C40226 /* SYFZLTKHJW.TTF */,
+			);
+			name = TFF;
+			sourceTree = "<group>";
+		};
+		C9BAED081DC8281E005F3D85 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		C9BAED091DC8282A005F3D85 /* Exten */ = {
+			isa = PBXGroup;
+			children = (
+				C9BAED251DC84951005F3D85 /* UIView+Screenshot.h */,
+				C9BAED261DC84951005F3D85 /* UIView+Screenshot.m */,
+				C9BAED221DC83D99005F3D85 /* UIColor+MACProject.h */,
+				C9BAED231DC83D99005F3D85 /* UIColor+MACProject.m */,
+				C9BAED1F1DC83AC7005F3D85 /* UIView+MAC.h */,
+				C9BAED201DC83AC7005F3D85 /* UIView+MAC.m */,
+				C9BAED1E1DC83975005F3D85 /* MACMacro.h */,
+				C9BAED1B1DC838FF005F3D85 /* UIColor+Mac.h */,
+				C9BAED1C1DC838FF005F3D85 /* UIColor+Mac.m */,
+				C9BAED0D1DC83537005F3D85 /* UIView+HUD.h */,
+				C9BAED0E1DC83537005F3D85 /* UIView+HUD.m */,
+				C9BAED0A1DC829B5005F3D85 /* UIView+GestureCallback.h */,
+				C9BAED0B1DC829B5005F3D85 /* UIView+GestureCallback.m */,
+				C9FD372B1DC7495700E0D1BB /* UIView+Blur.h */,
+				C9FD372C1DC7495700E0D1BB /* UIView+Blur.m */,
+				C9FD37281DC747E900E0D1BB /* UIView+Shake.h */,
+				C9FD37291DC747E900E0D1BB /* UIView+Shake.m */,
+			);
+			name = Exten;
+			sourceTree = "<group>";
+		};
+		C9BAED131DC83891005F3D85 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C9BAED141DC83891005F3D85 /* LICENSE */,
+				C9BAED151DC83891005F3D85 /* MBProgressHUD.h */,
+				C9BAED161DC83891005F3D85 /* MBProgressHUD.m */,
+				C9BAED171DC83891005F3D85 /* README.mdown */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		C9D104DC1DC6F57100C40226 /* MONActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +328,17 @@
 				C9D104DF1DC6F57100C40226 /* MONActivityIndicatorView.m */,
 			);
 			path = MONActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		C9FD37241DC73F8700E0D1BB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C98D68581DC05076000B678E /* hor@2x.png */,
+				C98D685C1DC07FF1000B678E /* 7.jpg */,
+				C98D683A1DBA0641000B678E /* green.jpg */,
+				C98D685A1DC07DFA000B678E /* 5.jpg */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 		F78943AB52C4268B51161527 /* Frameworks */ = {
@@ -308,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9FD372F1DC74ADE00E0D1BB /* 遮罩-底图@2x.png in Resources */,
 				C9D104E71DC7206500C40226 /* aa.TTF in Resources */,
 				C9D104E51DC71F4900C40226 /* SYFZLTKHJW.TTF in Resources */,
 				C98D685D1DC07FF1000B678E /* 7.jpg in Resources */,
@@ -317,6 +419,7 @@
 				C98D68021DB76FD0000B678E /* LaunchScreen.storyboard in Resources */,
 				C98D67FF1DB76FD0000B678E /* Assets.xcassets in Resources */,
 				C98D68531DC0416F000B678E /* LICENSE in Resources */,
+				C9BAED181DC83891005F3D85 /* LICENSE in Resources */,
 				C98D683B1DBA0641000B678E /* green.jpg in Resources */,
 				C98D67FD1DB76FD0000B678E /* Main.storyboard in Resources */,
 				C98D68571DC04DFD000B678E /* 2.jpg in Resources */,
@@ -380,16 +483,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BAED121DC83772005F3D85 /* ViewControllerHUD.m in Sources */,
 				C98D68551DC0416F000B678E /* UIScrollView+EmptyDataSet.m in Sources */,
+				C9FD372A1DC747E900E0D1BB /* UIView+Shake.m in Sources */,
 				C98D67FA1DB76FD0000B678E /* ViewController.m in Sources */,
+				C9BAED1D1DC838FF005F3D85 /* UIColor+Mac.m in Sources */,
+				C9BAED0C1DC829B5005F3D85 /* UIView+GestureCallback.m in Sources */,
 				C9D104E11DC6F57100C40226 /* MONActivityIndicatorView.m in Sources */,
 				C98D68441DBDA9FD000B678E /* HandleCalendar.m in Sources */,
+				C9BAED191DC83891005F3D85 /* MBProgressHUD.m in Sources */,
 				C9D104DB1DC6F23B00C40226 /* RightPanBack.m in Sources */,
+				C9BAED1A1DC83892005F3D85 /* README.mdown in Sources */,
+				C9FD372D1DC7495700E0D1BB /* UIView+Blur.m in Sources */,
 				C98D68541DC0416F000B678E /* README.md in Sources */,
 				C98D68381DBA05D2000B678E /* LWCollectionViewCell.m in Sources */,
 				C98D67F71DB76FD0000B678E /* AppDelegate.m in Sources */,
 				C98D67F41DB76FD0000B678E /* main.m in Sources */,
+				C9BAED271DC84951005F3D85 /* UIView+Screenshot.m in Sources */,
+				C9BAED241DC83D99005F3D85 /* UIColor+MACProject.m in Sources */,
 				C98D684C1DC040C5000B678E /* EmptyDataSet.m in Sources */,
+				C9BAED0F1DC83537005F3D85 /* UIView+HUD.m in Sources */,
+				C9BAED211DC83AC7005F3D85 /* UIView+MAC.m in Sources */,
 				C98D68311DB9F79C000B678E /* TableViewController.m in Sources */,
 				C98D68341DB9FEF4000B678E /* LWCustomerLayout.m in Sources */,
 				C98D683F1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m in Sources */,
