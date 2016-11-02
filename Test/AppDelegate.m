@@ -10,7 +10,8 @@
 #import "ViewController.h"
 #import "EmptyDataSet.h"
 #import "ViewControllerHUD.h"
-
+#import "UpdateAllFonts.h"
+#import "CocoaTouchBtnExten.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +23,7 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ViewControllerHUD alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CocoaTouchBtnExten alloc] init]];
     [self.window makeKeyAndVisible];
     //   配置字体
     
