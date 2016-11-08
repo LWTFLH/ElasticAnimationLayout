@@ -31,30 +31,30 @@
 //}
 //
 
-+ (void)load
-{
-    Method imp = class_getInstanceMethod([self class], @selector(initWithFrame:));
-    Method myImp = class_getInstanceMethod([self class], @selector(myinitwithFrame:));
-    method_exchangeImplementations(imp, myImp);
-    NSLog(@"================已经加载完毕load");
-}
+//+ (void)load
+//{
+//    Method imp = class_getInstanceMethod([self class], @selector(initWithFrame:));
+//    Method myImp = class_getInstanceMethod([self class], @selector(myinitwithFrame:));
+//    method_exchangeImplementations(imp, myImp);
+//    NSLog(@"================已经加载完毕load");
+//}
 
-- (id)myinitwithFrame:(CGRect)frame
-{
-    [self myinitwithFrame:frame];
-    if (self) {
-     //   CGFloat fontSize = self.titleLabel.font.pointSize;
-        self.font = [UIFont systemFontOfSize:8];
-        self.tintColor = [UIColor greenColor];
-        self.layer.borderColor = [UIColor blueColor].CGColor;
-        self.layer.borderWidth  = 5.0;
-
-    }
-    NSLog(@"%@",self);
-    NSLog(@"================myinit");
-    return self;
-}
-
+//- (id)myinitwithFrame:(CGRect)frame
+//{
+//    [self myinitwithFrame:frame];
+//    if (self) {
+//     //   CGFloat fontSize = self.titleLabel.font.pointSize;
+//        self.font = [UIFont systemFontOfSize:8];
+//        self.tintColor = [UIColor greenColor];
+//        self.layer.borderColor = [UIColor blueColor].CGColor;
+//        self.layer.borderWidth  = 5.0;
+//
+//    }
+//    NSLog(@"%@",self);
+//    NSLog(@"================myinit");
+//    return self;
+//}
+//
 @end
 //@implementation UILabel (LWFont)
 

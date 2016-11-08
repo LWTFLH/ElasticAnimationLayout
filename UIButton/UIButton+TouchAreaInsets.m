@@ -24,9 +24,18 @@
 
 #import <objc/runtime.h>
 #import "UIButton+TouchAreaInsets.h"
-
+const NSString  *stateUserKey = @"stateUserKey";
 @implementation UIButton (JLUtils)
+-(NSString *)descri{
 
+
+    return objc_getAssociatedObject(self, &stateUserKey);
+}
+-(void)setDescri:(NSString *)descri{
+
+     objc_setAssociatedObject(self, &stateUserKey,descri,OBJC_ASSOCIATION_COPY_NONATOMIC);
+
+}
 - (UIEdgeInsets)touchAreaInsets
 {
 	return [objc_getAssociatedObject(self, @selector(touchAreaInsets)) UIEdgeInsetsValue];
@@ -39,9 +48,18 @@
     NSValue *value = [NSValue valueWithUIEdgeInsets:touchAreaInsets];
 	objc_setAssociatedObject(self, @selector(touchAreaInsets), value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
+// 响应链问题 不写hitTest 暂时没有调用 pointInside：  withEvent:
 
+//-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+//
+//     [super hitTest:point withEvent:event];
+//    
+//    
+//    return self;
+//}
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
 {
+    NSLog(@"响应链");
     UIEdgeInsets touchAreaInsets = self.touchAreaInsets;
     CGRect bounds = self.bounds;
     bounds = CGRectMake(bounds.origin.x - touchAreaInsets.left,

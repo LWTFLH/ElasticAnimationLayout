@@ -28,11 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   //  [self allFonts];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"green.jpg"]];
+  //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"green.jpg"]];
     self.navigationItem.titleView = [[UISwitch alloc] init];
     // self.view.backgroundColor = [UIColor cyanColor];
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+  //  self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    //self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
     UIBarButtonItem *left =
     [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(back:)];
     self.navigationItem.leftBarButtonItem = left;
@@ -143,7 +143,7 @@
 
     [super viewWillAppear:animated];
     
-    [self lwTestGesture];
+  //  [self lwTestGesture];
     
 }
 #pragma mark 测试封装后的手势代码块

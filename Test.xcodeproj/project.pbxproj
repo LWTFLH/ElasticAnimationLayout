@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1685CB20FC7136C65D740FFC /* libPods-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 043819CAC94D49AA4D4B1D63 /* libPods-Test.a */; };
+		C913C6061DD16CA500A33D0E /* ReplayKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C913C6041DD16CA500A33D0E /* ReplayKitViewController.m */; };
+		C913C6071DD16CA500A33D0E /* ReplayKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C913C6051DD16CA500A33D0E /* ReplayKitViewController.xib */; };
+		C93966731DCB25AB00F05B84 /* MLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C93966721DCB25AB00F05B84 /* MLTransition.m */; };
+		C94714021DD01E68000209CF /* StarsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = C94714001DD01E68000209CF /* StarsBackground.png */; };
+		C94714031DD01E68000209CF /* StarsForeground.png in Resources */ = {isa = PBXBuildFile; fileRef = C94714011DD01E68000209CF /* StarsForeground.png */; };
+		C94714061DD01E8E000209CF /* TestClip.m in Sources */ = {isa = PBXBuildFile; fileRef = C94714051DD01E8E000209CF /* TestClip.m */; };
+		C94714091DD06248000209CF /* TestYYKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C94714081DD06248000209CF /* TestYYKit.m */; };
 		C98D67F41DB76FD0000B678E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D67F31DB76FD0000B678E /* main.m */; };
 		C98D67F71DB76FD0000B678E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D67F61DB76FD0000B678E /* AppDelegate.m */; };
 		C98D67FA1DB76FD0000B678E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98D67F91DB76FD0000B678E /* ViewController.m */; };
@@ -43,6 +50,8 @@
 		C9BAED2A1DC8647F005F3D85 /* UpdateAllFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED291DC8647F005F3D85 /* UpdateAllFonts.m */; };
 		C9BAED331DC877D5005F3D85 /* UIButton+LWFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED321DC877D5005F3D85 /* UIButton+LWFont.m */; };
 		C9BAED361DC89364005F3D85 /* UINavigationItem+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BAED351DC89364005F3D85 /* UINavigationItem+Loading.m */; };
+		C9C84D2D1DCC5A8600D8E5DE /* TestPopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C84D2C1DCC5A8600D8E5DE /* TestPopUpViewController.m */; };
+		C9C84D2F1DCC64AF00D8E5DE /* bz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9C84D2E1DCC64AF00D8E5DE /* bz.jpg */; };
 		C9D104DB1DC6F23B00C40226 /* RightPanBack.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D104DA1DC6F23B00C40226 /* RightPanBack.m */; };
 		C9D104E01DC6F57100C40226 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C9D104DD1DC6F57100C40226 /* .gitkeep */; };
 		C9D104E11DC6F57100C40226 /* MONActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D104DF1DC6F57100C40226 /* MONActivityIndicatorView.m */; };
@@ -60,11 +69,30 @@
 		C9FEB9881DC98E480031C3CA /* UIButton+Submitting.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FEB97E1DC98E480031C3CA /* UIButton+Submitting.m */; };
 		C9FEB9891DC98E480031C3CA /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FEB9801DC98E480031C3CA /* UIButton+TouchAreaInsets.m */; };
 		C9FEB98C1DC990730031C3CA /* CocoaTouchBtnExten.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FEB98B1DC990730031C3CA /* CocoaTouchBtnExten.m */; };
+		C9FEB9901DC9E7090031C3CA /* NSBundle+JKAppIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = C9FEB98F1DC9E7090031C3CA /* NSBundle+JKAppIcon.m */; };
+		C9FEB9921DC9E82D0031C3CA /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9911DC9E82D0031C3CA /* icon.jpg */; };
+		C9FEB9991DC9E8ED0031C3CA /* 私人定制logo-58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9931DC9E8ED0031C3CA /* 私人定制logo-58@2x.png */; };
+		C9FEB99A1DC9E8ED0031C3CA /* 私人定制logo-80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9941DC9E8ED0031C3CA /* 私人定制logo-80@2x.png */; };
+		C9FEB99B1DC9E8ED0031C3CA /* 私人定制logo-87@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9951DC9E8ED0031C3CA /* 私人定制logo-87@3x.png */; };
+		C9FEB99C1DC9E8ED0031C3CA /* 私人定制logo-120@2x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9961DC9E8ED0031C3CA /* 私人定制logo-120@2x-1.png */; };
+		C9FEB99D1DC9E8ED0031C3CA /* 私人定制logo-120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9971DC9E8ED0031C3CA /* 私人定制logo-120@3x.png */; };
+		C9FEB99E1DC9E8ED0031C3CA /* 私人定制logo-180@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9FEB9981DC9E8ED0031C3CA /* 私人定制logo-180@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043819CAC94D49AA4D4B1D63 /* libPods-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		381A1A5181E8C417D2FD891D /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		C913C6031DD16CA500A33D0E /* ReplayKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplayKitViewController.h; sourceTree = "<group>"; };
+		C913C6041DD16CA500A33D0E /* ReplayKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplayKitViewController.m; sourceTree = "<group>"; };
+		C913C6051DD16CA500A33D0E /* ReplayKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplayKitViewController.xib; sourceTree = "<group>"; };
+		C93966711DCB25AB00F05B84 /* MLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTransition.h; sourceTree = "<group>"; };
+		C93966721DCB25AB00F05B84 /* MLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTransition.m; sourceTree = "<group>"; };
+		C94714001DD01E68000209CF /* StarsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarsBackground.png; sourceTree = "<group>"; };
+		C94714011DD01E68000209CF /* StarsForeground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarsForeground.png; sourceTree = "<group>"; };
+		C94714041DD01E8E000209CF /* TestClip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClip.h; sourceTree = "<group>"; };
+		C94714051DD01E8E000209CF /* TestClip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClip.m; sourceTree = "<group>"; };
+		C94714071DD06248000209CF /* TestYYKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestYYKit.h; sourceTree = "<group>"; };
+		C94714081DD06248000209CF /* TestYYKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestYYKit.m; sourceTree = "<group>"; };
 		C98D67EF1DB76FD0000B678E /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98D67F31DB76FD0000B678E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C98D67F51DB76FD0000B678E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +151,9 @@
 		C9BAED321DC877D5005F3D85 /* UIButton+LWFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LWFont.m"; sourceTree = "<group>"; };
 		C9BAED341DC89364005F3D85 /* UINavigationItem+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Loading.h"; sourceTree = "<group>"; };
 		C9BAED351DC89364005F3D85 /* UINavigationItem+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Loading.m"; sourceTree = "<group>"; };
+		C9C84D2B1DCC5A8600D8E5DE /* TestPopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPopUpViewController.h; sourceTree = "<group>"; };
+		C9C84D2C1DCC5A8600D8E5DE /* TestPopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPopUpViewController.m; sourceTree = "<group>"; };
+		C9C84D2E1DCC64AF00D8E5DE /* bz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bz.jpg; sourceTree = "<group>"; };
 		C9D104D91DC6F23B00C40226 /* RightPanBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightPanBack.h; sourceTree = "<group>"; };
 		C9D104DA1DC6F23B00C40226 /* RightPanBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightPanBack.m; sourceTree = "<group>"; };
 		C9D104DD1DC6F57100C40226 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -154,6 +185,15 @@
 		C9FEB9811DC98E480031C3CA /* UIButtonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonHeader.h; sourceTree = "<group>"; };
 		C9FEB98A1DC990730031C3CA /* CocoaTouchBtnExten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaTouchBtnExten.h; sourceTree = "<group>"; };
 		C9FEB98B1DC990730031C3CA /* CocoaTouchBtnExten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaTouchBtnExten.m; sourceTree = "<group>"; };
+		C9FEB98E1DC9E7090031C3CA /* NSBundle+JKAppIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+JKAppIcon.h"; sourceTree = "<group>"; };
+		C9FEB98F1DC9E7090031C3CA /* NSBundle+JKAppIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+JKAppIcon.m"; sourceTree = "<group>"; };
+		C9FEB9911DC9E82D0031C3CA /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		C9FEB9931DC9E8ED0031C3CA /* 私人定制logo-58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私人定制logo-58@2x.png"; sourceTree = "<group>"; };
+		C9FEB9941DC9E8ED0031C3CA /* 私人定制logo-80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私人定制logo-80@2x.png"; sourceTree = "<group>"; };
+		C9FEB9951DC9E8ED0031C3CA /* 私人定制logo-87@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私人定制logo-87@3x.png"; sourceTree = "<group>"; };
+		C9FEB9961DC9E8ED0031C3CA /* 私人定制logo-120@2x-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私人定制logo-120@2x-1.png"; sourceTree = "<group>"; };
+		C9FEB9971DC9E8ED0031C3CA /* 私人定制logo-120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私人定制logo-120@3x.png"; sourceTree = "<group>"; };
+		C9FEB9981DC9E8ED0031C3CA /* 私人定制logo-180@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "私人定制logo-180@3x.png"; sourceTree = "<group>"; };
 		D8339997AD63D76304DB12A0 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +221,7 @@
 		C98D67E61DB76FD0000B678E = {
 			isa = PBXGroup;
 			children = (
+				C9FEB99F1DC9E9450031C3CA /* Ics */,
 				C9BAED131DC83891005F3D85 /* MBProgressHUD */,
 				C9BAED091DC8282A005F3D85 /* Exten */,
 				C9BAED081DC8281E005F3D85 /* Lib */,
@@ -255,6 +296,16 @@
 				C9BAED291DC8647F005F3D85 /* UpdateAllFonts.m */,
 				C9FEB98A1DC990730031C3CA /* CocoaTouchBtnExten.h */,
 				C9FEB98B1DC990730031C3CA /* CocoaTouchBtnExten.m */,
+				C9C84D2B1DCC5A8600D8E5DE /* TestPopUpViewController.h */,
+				C9C84D2C1DCC5A8600D8E5DE /* TestPopUpViewController.m */,
+				C9C84D2E1DCC64AF00D8E5DE /* bz.jpg */,
+				C94714041DD01E8E000209CF /* TestClip.h */,
+				C94714051DD01E8E000209CF /* TestClip.m */,
+				C94714071DD06248000209CF /* TestYYKit.h */,
+				C94714081DD06248000209CF /* TestYYKit.m */,
+				C913C6031DD16CA500A33D0E /* ReplayKitViewController.h */,
+				C913C6041DD16CA500A33D0E /* ReplayKitViewController.m */,
+				C913C6051DD16CA500A33D0E /* ReplayKitViewController.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -329,6 +380,7 @@
 		C9BAED091DC8282A005F3D85 /* Exten */ = {
 			isa = PBXGroup;
 			children = (
+				C9FEB98D1DC9E7090031C3CA /* NSBundle */,
 				C9FEB9701DC98E480031C3CA /* UIButton */,
 				C9BAED341DC89364005F3D85 /* UINavigationItem+Loading.h */,
 				C9BAED351DC89364005F3D85 /* UINavigationItem+Loading.m */,
@@ -351,6 +403,8 @@
 				C9FD37291DC747E900E0D1BB /* UIView+Shake.m */,
 				C9BAED311DC877D5005F3D85 /* UIButton+LWFont.h */,
 				C9BAED321DC877D5005F3D85 /* UIButton+LWFont.m */,
+				C93966711DCB25AB00F05B84 /* MLTransition.h */,
+				C93966721DCB25AB00F05B84 /* MLTransition.m */,
 			);
 			name = Exten;
 			sourceTree = "<group>";
@@ -379,6 +433,8 @@
 		C9FD37241DC73F8700E0D1BB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C94714001DD01E68000209CF /* StarsBackground.png */,
+				C94714011DD01E68000209CF /* StarsForeground.png */,
 				C98D68581DC05076000B678E /* hor@2x.png */,
 				C98D685C1DC07FF1000B678E /* 7.jpg */,
 				C98D683A1DBA0641000B678E /* green.jpg */,
@@ -409,6 +465,29 @@
 				C9FEB9811DC98E480031C3CA /* UIButtonHeader.h */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		C9FEB98D1DC9E7090031C3CA /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				C9FEB98E1DC9E7090031C3CA /* NSBundle+JKAppIcon.h */,
+				C9FEB9911DC9E82D0031C3CA /* icon.jpg */,
+				C9FEB98F1DC9E7090031C3CA /* NSBundle+JKAppIcon.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		C9FEB99F1DC9E9450031C3CA /* Ics */ = {
+			isa = PBXGroup;
+			children = (
+				C9FEB9931DC9E8ED0031C3CA /* 私人定制logo-58@2x.png */,
+				C9FEB9941DC9E8ED0031C3CA /* 私人定制logo-80@2x.png */,
+				C9FEB9951DC9E8ED0031C3CA /* 私人定制logo-87@3x.png */,
+				C9FEB9961DC9E8ED0031C3CA /* 私人定制logo-120@2x-1.png */,
+				C9FEB9971DC9E8ED0031C3CA /* 私人定制logo-120@3x.png */,
+				C9FEB9981DC9E8ED0031C3CA /* 私人定制logo-180@3x.png */,
+			);
+			name = Ics;
 			sourceTree = "<group>";
 		};
 		F78943AB52C4268B51161527 /* Frameworks */ = {
@@ -483,18 +562,29 @@
 				C9D104E71DC7206500C40226 /* aa.TTF in Resources */,
 				C9D104E51DC71F4900C40226 /* SYFZLTKHJW.TTF in Resources */,
 				C98D685D1DC07FF1000B678E /* 7.jpg in Resources */,
+				C94714031DD01E68000209CF /* StarsForeground.png in Resources */,
 				C98D68401DBD9B2E000B678E /* UserRecoedCollectionViewCell.xib in Resources */,
 				C98D685B1DC07DFA000B678E /* 5.jpg in Resources */,
 				C9D104E01DC6F57100C40226 /* .gitkeep in Resources */,
+				C9FEB99E1DC9E8ED0031C3CA /* 私人定制logo-180@3x.png in Resources */,
+				C9FEB99D1DC9E8ED0031C3CA /* 私人定制logo-120@3x.png in Resources */,
+				C9C84D2F1DCC64AF00D8E5DE /* bz.jpg in Resources */,
 				C98D68021DB76FD0000B678E /* LaunchScreen.storyboard in Resources */,
 				C98D67FF1DB76FD0000B678E /* Assets.xcassets in Resources */,
 				C98D68531DC0416F000B678E /* LICENSE in Resources */,
+				C9FEB99A1DC9E8ED0031C3CA /* 私人定制logo-80@2x.png in Resources */,
 				C9BAED181DC83891005F3D85 /* LICENSE in Resources */,
 				C98D683B1DBA0641000B678E /* green.jpg in Resources */,
 				C98D67FD1DB76FD0000B678E /* Main.storyboard in Resources */,
 				C98D68571DC04DFD000B678E /* 2.jpg in Resources */,
+				C9FEB9921DC9E82D0031C3CA /* icon.jpg in Resources */,
+				C9FEB99B1DC9E8ED0031C3CA /* 私人定制logo-87@3x.png in Resources */,
+				C913C6071DD16CA500A33D0E /* ReplayKitViewController.xib in Resources */,
+				C94714021DD01E68000209CF /* StarsBackground.png in Resources */,
 				C98D68391DBA05D2000B678E /* LWCollectionViewCell.xib in Resources */,
+				C9FEB99C1DC9E8ED0031C3CA /* 私人定制logo-120@2x-1.png in Resources */,
 				C98D68591DC05076000B678E /* hor@2x.png in Resources */,
+				C9FEB9991DC9E8ED0031C3CA /* 私人定制logo-58@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,17 +652,21 @@
 				C9BAED0C1DC829B5005F3D85 /* UIView+GestureCallback.m in Sources */,
 				C9D104E11DC6F57100C40226 /* MONActivityIndicatorView.m in Sources */,
 				C98D68441DBDA9FD000B678E /* HandleCalendar.m in Sources */,
+				C94714091DD06248000209CF /* TestYYKit.m in Sources */,
 				C9BAED361DC89364005F3D85 /* UINavigationItem+Loading.m in Sources */,
 				C9BAED191DC83891005F3D85 /* MBProgressHUD.m in Sources */,
 				C9D104DB1DC6F23B00C40226 /* RightPanBack.m in Sources */,
 				C9FEB9821DC98E480031C3CA /* UIButton+Block.m in Sources */,
+				C913C6061DD16CA500A33D0E /* ReplayKitViewController.m in Sources */,
 				C9BAED1A1DC83892005F3D85 /* README.mdown in Sources */,
 				C9FD372D1DC7495700E0D1BB /* UIView+Blur.m in Sources */,
 				C98D68541DC0416F000B678E /* README.md in Sources */,
 				C9FEB9881DC98E480031C3CA /* UIButton+Submitting.m in Sources */,
 				C98D68381DBA05D2000B678E /* LWCollectionViewCell.m in Sources */,
 				C9FEB9891DC98E480031C3CA /* UIButton+TouchAreaInsets.m in Sources */,
+				C93966731DCB25AB00F05B84 /* MLTransition.m in Sources */,
 				C98D67F71DB76FD0000B678E /* AppDelegate.m in Sources */,
+				C9FEB9901DC9E7090031C3CA /* NSBundle+JKAppIcon.m in Sources */,
 				C9FEB9841DC98E480031C3CA /* UIButton+Indicator.m in Sources */,
 				C9BAED331DC877D5005F3D85 /* UIButton+LWFont.m in Sources */,
 				C98D67F41DB76FD0000B678E /* main.m in Sources */,
@@ -588,7 +682,9 @@
 				C98D68311DB9F79C000B678E /* TableViewController.m in Sources */,
 				C98D68341DB9FEF4000B678E /* LWCustomerLayout.m in Sources */,
 				C98D683F1DBD9B2E000B678E /* UserRecoedCollectionViewCell.m in Sources */,
+				C94714061DD01E8E000209CF /* TestClip.m in Sources */,
 				C9FEB9861DC98E480031C3CA /* UIButton+MAC.m in Sources */,
+				C9C84D2D1DCC5A8600D8E5DE /* TestPopUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

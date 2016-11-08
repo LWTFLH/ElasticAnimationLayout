@@ -30,5 +30,5 @@
  *  @brief  设置按钮额外热区
  */
 @property (nonatomic, assign) UIEdgeInsets touchAreaInsets;
-
+@property(nonatomic,strong)NSString *descri;
 @end

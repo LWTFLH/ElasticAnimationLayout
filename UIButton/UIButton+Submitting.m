@@ -35,6 +35,7 @@
     CGRect viewBounds = self.modalView.bounds;
     self.spinnerView = [[UIActivityIndicatorView alloc]
                         initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    self.spinnerView.color = self.titleLabel.textColor;
     self.spinnerView.tintColor = self.titleLabel.textColor;
     
     CGRect spinnerViewBounds = self.spinnerView.bounds;

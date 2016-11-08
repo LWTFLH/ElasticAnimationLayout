@@ -6,5 +6,10 @@ target 'Test' do
   # use_frameworks!
 
   # Pods for Test
-  
+ pod 'Masonry', '~> 1.0.1'
+ pod 'KLCPopup', '~> 1.0'
+ pod 'XLForm', '~> 3.2.0'
+ pod 'YYKit', '~> 1.0.7' 
+ pod 'SDWebImage', '~> 3.8.1'
+ pod 'MJRefresh', '~> 3.1.12'  
 end

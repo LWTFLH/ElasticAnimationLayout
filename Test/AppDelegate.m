@@ -12,19 +12,32 @@
 #import "ViewControllerHUD.h"
 #import "UpdateAllFonts.h"
 #import "CocoaTouchBtnExten.h"
+#import "MLTransition.h"
+#import "TestPopUpViewController.h"
+#import "TestClip.h"
+#import "TestYYKit.h"
+#import "ReplayKitViewController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(nullable NSDictionary *)launchOption{
+#warning one line to validate
+    [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];//or MLTransitionGestureRecognizerTypeScreenEdgePan
+    //...
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[CocoaTouchBtnExten alloc] init]];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ReplayKitViewController alloc] init]];
     [self.window makeKeyAndVisible];
+    
+  //  [MLTransition validatePanBackWithMLTransitionGestureRecognizerType:MLTransitionGestureRecognizerTypePan];
     //   配置字体
     
     
